@@ -23,7 +23,7 @@ export class ProductService {
    */
   getProduct(id: string): Observable<any> {
     return this.http.get(`/spree/api/v1/products/${id}`)
-    .map(res => res.json());
+      .map(res => { console.log(res.json()); return res.json(); });
   }
 
   /**

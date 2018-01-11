@@ -87,9 +87,7 @@ export class CheckoutService {
    * @memberof CheckoutService
    */
   getOrder(orderNumber) {
-    return this.http.get(
-      `spree/api/v1/orders/${orderNumber}.json`
-    ).map(res => {
+    return this.http.get(`orders/${orderNumber}`).map(res => {
       const order = res.json();
       return order;
     });

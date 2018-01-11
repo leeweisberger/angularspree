@@ -18,9 +18,7 @@ export class ProfileDropdownComponent implements OnInit {
   }
 
   logout() {
-    this.authService.logout().subscribe(
-      data => console.log(data)
-    );
+    this.authService.logout();
   }
 
 }

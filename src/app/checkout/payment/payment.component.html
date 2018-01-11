@@ -7,9 +7,9 @@
 				<span class="you-pay">${{totalCartValue$ | async | number:'1.2-2'}}</span>
 			</span>
 		</div>
-		<div class="pay-body">
+		<!--<div class="pay-body">
 			<app-payment-modes-list [orderNumber]="orderNumber$ | async" [paymentAmount]="totalCartValue$ | async"></app-payment-modes-list>
-		</div>
+		</div>-->
 	</div>
 	<div class="right">
 		<div class="mini-bag-summary">
@@ -21,7 +21,7 @@
 			</div>
 			<div class="shipping">
 				<span>Delivery</span>
-				<span class="shipping-fee c-green">FREE</span>
+				<span class="shipping-fee">$3.99</span>
 			</div>
 		</div>
 		<div class="pay-lbl-total">
